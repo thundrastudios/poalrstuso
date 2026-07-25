@@ -4,7 +4,7 @@ import {Logo} from "./Logo"
 export function Header() {
 	return (
 		<header>
-			<div className='w-5/6 flex items-center justify-between mx-auto'>
+			<div className='w-5/7 flex items-center justify-between mx-auto'>
       <Logo/>
 			<DesktopNavLinks/>
       </div>
