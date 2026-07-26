@@ -1,7 +1,5 @@
- 
- 
- import { Globe, Layout, Smartphone, Zap, Code2, Gauge } from 'lucide-react'
- export const SERVICES_DATA = [
+import { Globe, Layout, Smartphone, Zap, Code2, Gauge } from 'lucide-react'
+export const SERVICES_DATA = [
 	{
 		id: 1,
 		title: 'Website Development',
