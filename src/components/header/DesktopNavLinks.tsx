@@ -1,6 +1,6 @@
 'use client'
 
-import { NAV_LINKS } from './NavData'
+import { NAV_LINKS } from '@/data/NavData'
 
 export function DesktopNavLinks() {
 	return (

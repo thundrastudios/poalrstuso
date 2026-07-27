@@ -1,4 +1,4 @@
-import { SERVICES_DATA } from './navServices'
+import { SERVICES_DATA } from '@/data/navServices'
 
 export function Services() {
 	return (
