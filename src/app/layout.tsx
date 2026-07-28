@@ -23,8 +23,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html
-			lang='ru'
-			className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}
+			lang='en'
+			className={`scroll-smooth ${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}
 		>
 			<body>{children}</body>
 		</html>
