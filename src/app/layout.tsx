@@ -1,5 +1,5 @@
-// app/layout.tsx
 import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google'
+
 import "./globals.css" 
 const inter = Inter({
 	subsets: ['latin', 'cyrillic'],
@@ -26,7 +26,9 @@ export default function RootLayout({
 			lang='en'
 			className={`scroll-smooth ${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}
 		>
-			<body>{children}</body>
+			<body>
+				{children}
+			</body>
 		</html>
 	)
 }
