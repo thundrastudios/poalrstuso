@@ -9,7 +9,7 @@ export function ComparisonTable() {
 				</h3>
 			</div>
 
-			{/* Scroll hint — mobile only */}
+		
 			<p className='bg-background px-4 pt-3 text-center text-xs text-text-secondary/70 sm:hidden'>
 				Swipe to compare →
 			</p>
