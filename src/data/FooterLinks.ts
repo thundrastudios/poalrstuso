@@ -1,9 +1,9 @@
 import {
 	FaInstagram,
-	FaFacebook,
+	FaDiscord ,
 	FaLinkedin,
 	FaGithub,
-	FaTwitter,
+
 } from 'react-icons/fa'
 
 export const footerColumns = [
@@ -23,23 +23,20 @@ export const footerColumns = [
 ]
 export const logoLinks = [
 	{
-		icon: FaFacebook,
-		link: '#',
-	},
-	{
 		icon: FaInstagram,
-		link: '#',
+		link: 'https://www.instagram.com/polarsstudios/'
 	},
 	{
 		icon: FaLinkedin,
-		link: '#',
+		link: 'https://www.linkedin.com/in/maxim-gvozdev-799a83425/'
 	},
-	{
-		icon: FaTwitter,
-		link: '#',
-	},
+
 	{
 		icon: FaGithub,
-		link: '#',
+		link: '#'
 	},
+	{
+		icon: FaDiscord,
+		link: 'https://discord.gg/93rqNS6bV'
+	}
 ]

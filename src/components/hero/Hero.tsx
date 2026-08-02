@@ -19,7 +19,7 @@ export function Hero() {
 			onMouseMove={handleMouseMove}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className='relative w-full py-20 md:py-32 overflow-hidden flex flex-col items-center justify-center text-center group cursor-default'
+			className='relative w-full md:pt-44 md:pb-32 pt-36 pb-24 md:py-32 overflow-hidden flex flex-col items-center justify-center text-center group cursor-default'
 		>
 			<div
 				className='absolute inset-0 -z-30 opacity-10 pointer-events-none'
@@ -28,7 +28,7 @@ export function Hero() {
             linear-gradient(to right, rgba(165, 180, 252, 0.15) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(165, 180, 252, 0.15) 1px, transparent 1px)
           `,
-					backgroundSize: '40px 40px',
+					backgroundSize: '40px 40px'
 				}}
 			/>
 
@@ -42,7 +42,7 @@ export function Hero() {
           `,
 					backgroundSize: '40px 40px',
 					WebkitMaskImage: `radial-gradient(circle 320px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 80%)`,
-					maskImage: `radial-gradient(circle 320px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 80%)`,
+					maskImage: `radial-gradient(circle 320px at ${mousePos.x}px ${mousePos.y}px, black 0%, transparent 80%)`
 				}}
 			/>
 
@@ -53,12 +53,11 @@ export function Hero() {
 					top: `${mousePos.y - 275}px`,
 					opacity: isHovered ? 0.45 : 0,
 					background:
-						'radial-gradient(circle, rgba(139, 92, 246, 0.7) 0%, rgba(45, 212, 191, 0.35) 45%, transparent 70%)',
+						'radial-gradient(circle, rgba(139, 92, 246, 0.7) 0%, rgba(45, 212, 191, 0.35) 45%, transparent 70%)'
 				}}
 			/>
 
-		
-			<h1 className='text-5xl md:text-7xl font-extrabold text-text-primary leading-[1.1] max-w-4xl tracking-tight pointer-events-none select-none'>
+			<h1 className='max-w-5xl text-4xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-7xl'>
 				We Create Digital{' '}
 				<span className='bg-gradient-to-r from-accent-light via-aurora-cyan to-white bg-clip-text text-transparent'>
 					Solutions

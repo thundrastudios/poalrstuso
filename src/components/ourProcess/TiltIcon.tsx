@@ -9,12 +9,12 @@ interface TiltIconProps {
 
 export function TiltIcon({ icon: Icon }: TiltIconProps) {
 	return (
-		<div className='group relative z-10 cursor-pointer'>
-			<div className='absolute inset-0 rounded-2xl bg-accent/40 blur-xl opacity-0 scale-75 transition-all duration-500 group-hover:opacity-60 group-hover:scale-110' />
+		<div className='group relative z-10 cursor-pointer touch-manipulation'>
+			<div className='absolute inset-0 scale-75 rounded-2xl bg-accent/40 opacity-0 blur-lg transition-all duration-500 group-hover:scale-110 group-hover:opacity-60 group-active:scale-110 group-active:opacity-60 sm:blur-xl' />
 
-			<div className='relative  p-1 rounded-2xl transition-transform duration-300 ease-out group-hover:scale-110'>
+			<div className='relative rounded-2xl p-1 transition-transform duration-300 group-hover:scale-110 group-active:scale-105'>
 				<div className={iconWrapperStyles}>
-					<Icon className='w-6 h-6 text-white transition-transform duration-300 group-hover:scale-110' />
+					<Icon className='h-5 w-5 text-white transition-transform duration-300 group-hover:scale-110 group-active:scale-110 sm:h-6 sm:w-6' />
 				</div>
 			</div>
 		</div>

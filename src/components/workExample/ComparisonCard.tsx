@@ -26,26 +26,31 @@ export function ComparisonCard({
 	features,
 	perfectFor,
 	timeframe,
-	borderHoverClass = 'hover:border-accent-light/40',
+	borderHoverClass = 'hover:border-accent-light/40'
 }: ComparisonCardProps) {
 	return (
 		<div
-			className={`flex flex-col rounded-2xl bg-background-secondary/60 border border-border/80 ${borderHoverClass} transition-smooth hover:-translate-y-1 group p-8`}
+			className={`flex h-full flex-col rounded-2xl bg-background-secondary/60 border border-border/80 ${borderHoverClass} transition-smooth sm:hover:-translate-y-1 group p-5 sm:p-6 lg:p-8`}
 		>
-			<div className='flex items-center mb-4 gap-4'>
+			<div className='flex items-center mb-3 gap-3 sm:mb-4 sm:gap-4'>
 				<div className={iconWrapperName}>
-					<Icon className='w-8 h-8' />
+					<Icon className='w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8' />
 				</div>
-				<h3 className='text-xl font-bold text-text-primary'>{title}</h3>
+				<h3 className='text-lg font-bold text-text-primary sm:text-xl'>
+					{title}
+				</h3>
 			</div>
 
-			<p className='text-text-secondary text-sm leading-relaxed mb-8'>
+			<p className='text-text-secondary text-sm leading-relaxed mb-6 sm:mb-8'>
 				{description}
 			</p>
 
-			<div className='flex flex-col gap-6 mb-8'>
+			<div className='flex flex-col gap-4 mb-6 sm:gap-6 sm:mb-8'>
 				{features.map(feature => (
-					<FeatureItem key={feature.title} {...feature} />
+					<FeatureItem
+						key={feature.title}
+						{...feature}
+					/>
 				))}
 			</div>
 
@@ -53,9 +58,11 @@ export function ComparisonCard({
 
 			<FeatureList items={perfectFor} />
 
-			<div className='mt-auto rounded-xl bg-accent/10 border border-accent/20 p-4'>
+			<div className='mt-auto rounded-xl bg-accent/10 border border-accent/20 p-3 sm:p-4'>
 				<p className='text-accent-light text-sm mb-1'>Development timeframe:</p>
-				<p className='text-text-primary text-xl font-bold'>{timeframe}</p>
+				<p className='text-text-primary text-lg font-bold sm:text-xl'>
+					{timeframe}
+				</p>
 			</div>
 		</div>
 	)

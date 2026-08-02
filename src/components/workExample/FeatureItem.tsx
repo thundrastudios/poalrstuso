@@ -10,16 +10,18 @@ interface FeatureItemProps {
 export function FeatureItem({
 	icon: Icon,
 	title,
-	description,
+	description
 }: FeatureItemProps) {
 	return (
-		<div className='flex gap-4'>
-			<div className={iconWrapperStyles}>
-				<Icon className='w-8 h-8' />
+		<div className='flex gap-3 sm:gap-4'>
+			<div className={`${iconWrapperStyles} shrink-0`}>
+				<Icon className='w-6 h-6 sm:w-8 sm:h-8' />
 			</div>
-			<div>
-				<h4 className='font-bold text-text-primary text-lg'>{title}</h4>
-				<p className='text-text-secondary text-sm leading-relaxed'>
+			<div className='min-w-0'>
+				<h4 className='font-bold text-text-primary text-base sm:text-lg break-words'>
+					{title}
+				</h4>
+				<p className='text-text-secondary text-sm leading-relaxed break-words'>
 					{description}
 				</p>
 			</div>

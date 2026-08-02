@@ -4,19 +4,22 @@ import { NAV_LINKS } from '@/data/NavData'
 
 export function DesktopNavLinks() {
 	return (
-		<div className='hidden md:flex items-center justify-end flex-1 gap-8 lg:gap-10'>
+		<div className='flex items-center gap-8 lg:gap-10'>
 			<nav>
-				<ul className='flex flex-row gap-6 lg:gap-8 items-center list-none'>
+				<ul className='flex items-center gap-6 lg:gap-8'>
 					{NAV_LINKS.map(link => (
-						<li key={link.id} className='relative group'>
+						<li
+							key={link.id}
+							className='relative group'
+						>
 							<a
 								href={link.href}
-								className='text-text-secondary hover:text-accent-light transition-colors duration-300 font-medium py-2 block text-sm lg:text-base'
+								className='block py-2 text-sm lg:text-base font-medium text-text-secondary transition-colors hover:text-accent-light'
 							>
 								{link.label}
 							</a>
 
-							<span className='absolute bottom-0 left-0 w-0 h-0.5 bg-aurora-cyan transition-all duration-300 group-hover:w-full shadow-[0_0_8px_rgba(45,212,191,0.8)]' />
+							<span className='absolute bottom-0 left-0 h-0.5 w-0 bg-aurora-cyan transition-all group-hover:w-full' />
 						</li>
 					))}
 				</ul>

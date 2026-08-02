@@ -4,7 +4,7 @@ import Services from '@/components/ourServices/Services'
 import Work from '@/components/workExample/Work'
 import OurProcess from '@/components/ourProcess/ourProcess'
 import Footer from '@/components/footer/Footer'
-
+import Contact from '@/components/contact/index'
 export default function Home() {
 	return (
 		<div className='	min-h-screen	text-text-primary overflow-x-hidden	'>
@@ -27,9 +27,17 @@ export default function Home() {
 					<section id='process'>
 						<OurProcess />
 					</section>
+
+					<section
+						className='bg-background-secondary'
+						id='contact'
+					>
+						<Contact />
+					</section>
 				</div>
 			</main>
-			<Footer/>
+
+			<Footer />
 		</div>
 	)
 }
